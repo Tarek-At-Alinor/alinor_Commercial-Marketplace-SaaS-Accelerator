@@ -1,0 +1,411 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@background-color-grey: #E5E5E5;
+@background-color-white: white;
+@background-color-black: black;
+
+@error-color-red: red;
+
+@text-color-dark-grey: #454545;
+
+@buyer-blue-color: #3F48DB;
+@supplier-blue-color: #4581FF;
+@pink-color: #FEB5F1;
+
+@unit-1-rem: 1rem;
+@unit-1-px: 1px;
+
+@break-point-xs: 0;
+@break-point-sm: 576px;
+@break-point-md: 768px;
+@break-point-lg: 992px;
+@break-point-xl: 1200px;
+@break-point-xxl: 1400px;
+
+body, button, input, select, textarea {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: @background-color-white;
+    overflow-x: hidden !important;
+
+    &#index--page {
+        color: black;
+
+        .header-1, .sub-header, .display-3 {
+            font-weight: 300;
+        }
+
+        .header-1 {
+            &.newx-header-40 {
+                @media screen and (max-width: @break-point-sm) {
+                    font-size: 40px !important;
+                }
+
+                @media screen and (max-width: @break-point-xs) {
+                    font-size: 40px !important
+                }
+            }
+        }
+
+        #navbar {
+            background-color: transparent !important;
+            color: #B9B9B9 !important;
+            border-color: transparent !important;
+
+            .nav-item {
+                margin: 0 0.5rem 0 0.5rem;
+            }
+
+            .nav-link {
+                color: #B9B9B9 !important;
+                font-size: 14px;
+                padding-top: 15px;
+
+                &.btn {
+                    color: black !important;
+                    padding: .2rem 1rem .2rem 1rem !important
+                }
+            }
+        }
+
+        .accordion-button, .accordion-body {
+            font-size: 22px;
+        }
+
+        .accordion-body {
+            font-weight: 300;
+        }
+    }
+
+    footer {
+        padding-right: 7.5%;
+        padding-left: 7.5%;
+
+        @media screen and (max-width: @break-point-md) {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    &.dashboard-area-pages {
+        nav.navbar {
+            .nav-item {
+                width: auto;
+            }
+        }
+    }
+}
+
+.header-1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: -0.114864px;
+    color: #1D1D1D;
+}
+
+.header-3 {
+    font-size: 34px;
+}
+
+.header-2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 69px;
+    letter-spacing: -0.114864px;
+    color: #1D1D1D;
+}
+
+.sub-header {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1D1D1D;
+
+    span {
+        color: @supplier-blue-color;
+    }
+}
+
+.newx-header {
+    font-size: 36px;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.newx-header-20 {
+    font-size: 20px;
+    font-weight: 300;
+    word-break: break-word;
+    color: #707070;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.newx-header-16 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+#common-questions {
+    .accordion-item {
+        background-color: @background-color-white;
+        border: 0;
+    }
+
+    .accordion-button {
+        background-color: @background-color-white;
+    }
+}
+
+
+#main-hero, #sub-hero {
+    background: rgb(0,0,25);
+    background: -moz-linear-gradient(180deg, rgba(0,0,25,1) 7%, rgba(88,94,145,1) 82%, rgba(120,106,151,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,25,1) 7%, rgba(88,94,145,1) 82%, rgba(120,106,151,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,25,1) 7%, rgba(88,94,145,1) 82%, rgba(120,106,151,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000019",endColorstr="#786a97",GradientType=1);
+
+    #main-landing-section-1 {
+        .display-1, .sub-header {
+            color: white;
+        }
+    }
+
+    #home-1 {
+        background-image: url(/_content/Alinor.domain/alinor/landing/backgrounds/1.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 70vh;
+
+        @media screen and (max-width: @break-point-xxl) {
+            height: 70vh;
+        }
+
+        @media screen and (max-width: @break-point-xl) {
+            height: 60vh;
+        }
+
+        @media screen and (max-width: @break-point-lg) {
+            height: 50vh;
+        }
+
+        @media screen and (max-width: @break-point-md) {
+            background-position: center;
+            height: 50vh;
+        }
+
+        @media screen and (max-width: @break-point-sm) {
+            background-position: center;
+            height: 25vh;
+        }
+
+        @media screen and (max-width: @break-point-xs) {
+            background-position: center;
+            height: 25vh;
+        }
+    }
+
+    #home-logos {
+        img {
+            margin-top: 40px;
+            width: 150px;
+            height: 40px;
+        }
+    }
+}
+
+
+#navbar-container {
+    margin: 0 @unit-1-rem 0 @unit-1-rem;
+}
+
+nav.navbar {
+    background-color: @background-color-white !important;
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+
+    @media screen and (max-width: @break-point-md) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .nav-item {
+        width: max-content;
+
+        a.nav-link:not(.btn) {
+            color: #686868 !important;
+        }
+   }
+}
+
+#land-body {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,189,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,189,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,189,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#aabdff",GradientType=1);
+}
+
+#land-pink {
+    background: rgb(254,141,198);
+    background: -moz-linear-gradient(90deg, rgba(254,141,198,1) 0%, rgba(133,226,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(254,141,198,1) 0%, rgba(133,226,255,1) 100%);
+    background: linear-gradient(90deg, rgba(254,141,198,1) 0%, rgba(133,226,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe8dc6",endColorstr="#85e2ff",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#land-purple {
+    background: -moz-linear-gradient(270deg, rgba(0, 0, 26, 1) 0%, rgba(88, 94, 145, 1) 59%, rgba(168, 124, 161, 1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(0, 0, 26, 1) 0%, rgba(88, 94, 145, 1) 59%, rgba(168, 124, 161, 1) 100%);
+    background: linear-gradient(270deg, rgba(0, 0, 26, 1) 0%, rgba(88, 94, 145, 1) 59%, rgba(168, 124, 161, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+#main-hero, #sub-hero, #second-hero, #final-hero {
+    @media screen and (max-width: @break-point-sm) {
+        padding-left: 3.5% !important;
+        padding-right: 3.5% !important;
+    }
+
+    @media screen and (max-width: @break-point-xs) {
+        padding-left: 3.5% !important;
+        padding-right: 3.5% !important;
+    }
+}
+
+#second-hero {
+    background-color: white;
+    color: black;
+}
+
+#home-landing-section-2 {
+    background-image: url(/_content/Alinor.domain/alinor/landing/backgrounds/2.png);
+    background-position: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: @break-point-md) {
+        background-position: center;
+        height: 50vh;
+    }
+
+    @media screen and (max-width: @break-point-sm) {
+        height: 33vh;
+    }
+
+    @media screen and (max-width: @break-point-xs) {
+        height: 33vh;
+    }
+}
+
+#home-landing-section-3 {
+    background-image: url(/_content/Alinor.domain/alinor/landing/backgrounds/3.png);
+    background-position: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: @break-point-md) {
+        background-position: center;
+        height: 50vh;
+    }
+
+    @media screen and (max-width: @break-point-sm) {
+        height: 41vh;
+    }
+
+    @media screen and (max-width: @break-point-xs) {
+        height: 41vh;
+    }
+}
+
+#home-landing-section-4 {
+    background-image: url(/_content/Alinor.domain/alinor/landing/backgrounds/4.png);
+    background-position: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: @break-point-md) {
+        background-position: center;
+        height: 50vh;
+    }
+
+    @media screen and (max-width: @break-point-sm) {
+        height: 40vh;
+    }
+
+    @media screen and (max-width: @break-point-xs) {
+        height: 40vh;
+    }
+}
+
+.hot-pink {
+    color: RGB(199, 166, 210);
+}
+
+.not-hot-pink {
+    color: RGB(179, 168, 222)
+}
+
+.deep-purple {
+    color: RGB(88, 94, 144);
+    font-weight: 400;
+    font-size: 20px;
+
+    &.svg-17w {
+        width: 15px;
+        height: 15px;
+        margin-bottom: 5px;
+        fill: RGB(88, 94, 144);
+    }
+}
+
+#for-eric {
+    border-left: 2px solid RGB(199, 199, 199);
+
+    @media screen and (max-width: @break-point-sm) {
+        border-left: none;
+    }
+
+    @media screen and (max-width: @break-point-xs) {
+        border-left: none;
+    }
+
+    position: relative;
+
+    .number-left {
+        position: absolute;
+        left: -50px;
+        color: RGB(174, 174, 174);
+        font-weight: 300;
+        font-size: 45px;
+
+        @media screen and (max-width: @break-point-md) {
+            display: none;
+        }
+
+        @media screen and (max-width: @break-point-sm) {
+            display: none;
+        }
+
+        @media screen and (max-width: @break-point-xs) {
+            display: none;
+        }
+    }
+}

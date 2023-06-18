@@ -50,5 +50,12 @@
 
   <ItemGroup>
     <None Include="appsettings.Development.json" />
+    <None Include="wwwroot\alinor\css\alinor.less" />
+    <None Include="wwwroot\alinor\css\landing.less" />
+    <None Include="wwwroot\alinor\js\alinor.es5.js" />
+    <None Include="wwwroot\alinor\js\alinor.es5.min.js" />
+    <None Include="wwwroot\alinor\js\alinor.js" />
+    <None Include="wwwroot\alinor\seo\safari-pinned-tab.svg" />
+    <None Include="wwwroot\alinor\seo\site.webmanifest" />
   </ItemGroup>
 </Project>

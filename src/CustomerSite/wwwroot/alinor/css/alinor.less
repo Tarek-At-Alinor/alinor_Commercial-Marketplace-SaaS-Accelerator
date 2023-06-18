@@ -1,0 +1,312 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body, button, input, select, textarea {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+::-webkit-input-placeholder {
+    .placeholder();
+}
+
+:-moz-placeholder { 
+    .placeholder();
+}
+
+::-moz-placeholder {
+    .placeholder();
+}
+
+:-ms-input-placeholder {
+    .placeholder();
+}
+
+::-ms-input-placeholder {
+    .placeholder();
+}
+
+::placeholder { 
+    .placeholder();
+}
+
+.select2-search__field::placeholder {
+    .placeholder();
+    margin-left: 8px;
+}
+
+input:hover::-webkit-input-placeholder { 
+    .placeholder-hover();
+}
+
+input:hover:-moz-placeholder { 
+    .placeholder-hover();
+}
+
+input:hover::-moz-placeholder { 
+    .placeholder-hover();
+}
+
+input:hover:-ms-input-placeholder { 
+    .placeholder-hover();
+}
+
+input:hover::-ms-input-placeholder { 
+    .placeholder-hover();
+}
+
+input:hover::placeholder { 
+    .placeholder-hover();
+}
+
+.select2-search__field:hover::placeholder {
+    .placeholder-hover();
+}
+
+input:focus::-webkit-input-placeholder {
+    .placeholder-hover();
+}
+
+input:focus:-moz-placeholder {
+    .placeholder-hover();
+}
+
+input:focus::-moz-placeholder {
+    .placeholder-hover();
+}
+
+input:focus:-ms-input-placeholder {
+    .placeholder-hover();
+}
+
+input:focus::-ms-input-placeholder {
+    .placeholder-hover();
+}
+
+input:focus::placeholder {
+    .placeholder-hover();
+}
+
+.select2-search__field:focus::placeholder {
+    .placeholder-hover();
+}
+
+
+.toggle-password {
+    &:hover {
+        cursor: pointer;
+        color: @color-blue;
+        border-block-color: @border-color-blue;
+    }
+}
+
+.form-check-input {
+    &.float-end {
+        float: right !important;
+        border-radius: 3rem !important;
+    }
+
+    &:checked {
+        background-color: #60C36F;
+        border-color: #60C36F;
+    }
+}
+
+.form-control:hover {
+    .input-hover();
+}
+
+.select2-selection:hover {
+    .input-hover();
+}
+
+.step, .legal-card {
+    cursor: pointer;
+
+    &:hover {
+        border-color: @border-color-blue;
+        color: @color-blue;
+    }
+}
+
+.remove-step {
+    color: red;
+}
+
+.action-color {
+    color: orange;
+}
+
+.input-box:hover {
+    border-color: @border-color-blue;
+    color: @color-blue;
+}
+
+.main-text {
+    font-size: 14px;
+    line-height: 19px;
+    .text();
+}
+
+.sub-text {
+    font-size: 12px;
+    line-height: 16px;
+    .text();
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+.select2-selection__choice{
+    .border-r-0();
+    background-color:transparent !important;
+}
+
+.select2-search{
+    margin-left:8px;
+}
+
+.table thead th {
+    background-color: white;
+    text-transform: none;
+    color: #9B9B9B;
+}
+
+input, select, .input-group-text, .form-select, .select2-selection {
+    .border-r-0();
+    .border-buttom-only();
+    border-color: #d2ddec !important;
+}
+
+button {
+    .border-r-0();
+}
+
+a {
+    &.btn {
+        .border-r-0();
+    }
+}
+
+.card {
+    .border-r-0();
+    .box-shadow-0();
+
+    .card-title {
+        font-weight: bold;
+    }
+
+    .card-footer{
+        border-top:none;
+    }
+}
+
+.field-validation-error, input-validation-error {
+    color: red;
+}
+
+.input-validation-error + .toggle-password {
+    border-color: red;
+}
+
+.vw-md-50 {
+    width: 50vw;
+
+    @media screen and (max-width: @break-point-sm) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: @break-point-xs) {
+        width: 100%;
+    }
+}
+
+.vw-md-25 {
+    width: 25vw;
+
+    @media screen and (max-width: @break-point-sm) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: @break-point-xs) {
+        width: 100%;
+    }
+}
+
+.mt-vh-50 {
+    margin-top: 20vh;
+}
+
+.start-0 {
+    left: 0 !important;
+}
+
+.start-25 {
+    left: 25% !important;
+}
+
+.start-50 {
+    left: 50% !important;
+}
+
+.start-75 {
+    left: 75% !important;
+}
+
+.start-100 {
+    left: 100% !important;
+}
+
+/* Reusables */
+@border-color-blue: #2c7be5;
+@color-blue: #283e59;
+
+@break-point-xs: 0;
+@break-point-sm: 576px;
+@break-point-md: 768px;
+@break-point-lg: 992px;
+@break-point-xl: 1200px;
+@break-point-xxl: 1400px;
+
+.placeholder {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 22px !important;
+    letter-spacing: 0px !important;
+    text-align: left !important;
+    color: #000000 !important;
+}
+
+.placeholder-hover {
+    font-size: 14px !important;
+    color: grey !important;
+}
+
+.text {
+    font-weight: 400 !important;
+    letter-spacing: 0px !important;
+    text-align: left !important;
+    color: #000000 !important;
+}
+
+.border-r-0 {
+    border-radius: 0 !important;
+}
+
+.box-shadow-0 {
+    box-shadow: none !important;
+}
+
+.border-buttom-only {
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+}
+
+.input-hover {
+    background-color: #fff !important;
+    border-color: @border-color-blue !important;
+    .box-shadow-0();
+    color: #12263f !important;
+    outline: 0 !important;
+}

@@ -1,11 +1,38 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var host = $"https://{ViewContext.HttpContext.Request.Host}";
+    var canonical = $"https://{ViewContext.HttpContext.Request.Host}{ViewContext.HttpContext.Request.Path}{ViewContext.HttpContext.Request.QueryString}";
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="~/css/customer-site.css" />
+    <title>The Platform for Advanced Materials | Alinor</title>
+    <meta property="og:title" content="The Platform for Advanced Materials | Alinor">
 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="The platform to find and request advanced materials from European suppliers and manufacturers. Compare products and prices to get the best deal today.">
+    <meta property="og:description" content="The platform to find and request advanced materials from European suppliers and manufacturers. Compare products and prices to get the best deal today.">
+
+    <meta name="keywords" content="advanced materials, platform, marketplace, graphene, semiconductors, energy storage, green operations, sustainable energy, air treatment, coatings, photonics, plastic replacement" />
+
+    <meta name="application-name" content="Alinor">
+    <meta name="author" content="Alinor">
+
+    <link rel="apple-touch-icon" sizes="180x180" content-path href="/alinor/seo/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" content-path href="/alinor/seo/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" content-path href="/alinor/seo/favicon-16x16.png" />
+    <link rel="manifest" content-path href="/alinor/seo/site.webmanifest" />
+    <link rel="mask-icon" content-path href="/alinor/seo/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="canonical" href="@canonical">
+    <meta property="og:url" content="@canonical">
+    <meta property="og:image" content="@host/favicon-32x32.png">
+
+    <link rel="stylesheet" href="~/css/customer-site.css" />
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <link href="~/lib/Datatable/css/dataTables.bootstrap.min.css" rel="stylesheet" />
